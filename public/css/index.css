@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  height: 65px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px #333333;
+  transition: all 1s;
+}
+.header.active {
+  position: fixed;
+  z-index: 1000;
+  animation: fixed 1s;
+}
+@keyframes fixed {
+  from {
+    transform: translateY(-71px);
+    background: #fff;
+  }
+  to {
+    transform: translateY(0px);
+    background: #ffffff;
+  }
+}
+.header .headerCon {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+  font: 16px/1.5 latoregular, Verdana, sans-serif;
+  background: #fff;
+}
+.header .headerCon .headerConRight {
+  float: left;
+}
+.header .headerCon .headerConRight .logoA {
+  height: 65px;
+  display: block;
+}
+.header .headerCon .headerConRight .logoA .logo {
+  margin-top: 10px;
+}
+.header .headerCon .headerConLeft {
+  float: right;
+  height: 42px;
+  margin-top: 10px;
+}
+.header .headerCon .headerConLeft .navItem {
+  float: left;
+}
+.header .headerCon .headerConLeft .navItem:first-child {
+  margin-right: 100px;
+}
+.header .headerCon .headerConLeft .navItem .hoverC:hover {
+  color: #e94840;
+}
+.header .headerCon .headerConLeft .navItem .hoverC.active {
+  color: #e94840;
+}
+.header .headerCon .headerConLeft .navItem a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-weight: 900;
+  color: #000;
+}
+.header .headerCon .headerConLeft .navItem a img {
+  vertical-align: middle;
+}
+.header .headerCon .headerConLeft .navItem a span {
+  font-weight: 700;
+}
+.header .headerCon .headerConLeft .navItem .login {
+  background: #e94840;
+  border-radius: 10px;
+  padding: 4px 6px;
+  margin: 6px 15px 0 15px;
+  color: #ffffff;
+}

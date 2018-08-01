@@ -1,0 +1,27 @@
+.Partner {
+  width: 100%;
+  padding-top: 30px;
+  background: #FBF8F8;
+}
+.Partner .htit {
+  height: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: " 微软雅黑";
+  font-size: 18px;
+  font-weight: 700;
+}
+.Partner .hezuo {
+  width: 1200px;
+  margin: 0 auto;
+}
+.Partner .hezuo .joinItem {
+  width: 120px;
+  height: 60px;
+  margin-right: 9px;
+  background-image: url("../images/hua.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-top: 20px;
+}

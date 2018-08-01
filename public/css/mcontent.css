@@ -1,0 +1,346 @@
+.mcontent {
+  background: #f8f8f8;
+  width: 100%;
+  padding-top: 1px;
+}
+.mcontent .mheader {
+  width: 100%;
+  margin-top: 10px;
+  height: 140px;
+  background: #fff;
+}
+.mcontent .mheader .inner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 140px;
+}
+.mcontent .mheader .inner .mLeft {
+  float: left;
+  height: 120px;
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 140px;
+}
+.mcontent .mheader .inner .mLeft .mTitle {
+  font-size: 36px;
+  font-weight: 900;
+  color: #000;
+}
+.mcontent .mheader .inner .mLeft .time {
+  font-size: 14px;
+  color: #929292;
+  margin: 0 10px;
+}
+.mcontent .mheader .inner .mLeft .time span {
+  color: #000;
+}
+.mcontent .mheader .inner .mLeft .latest {
+  font-size: 14px;
+  color: #929292;
+}
+.mcontent .mheader .inner .mLeft .latest span {
+  color: #e94840;
+}
+.mcontent .mheader .inner .mRight {
+  float: right;
+  height: 120px;
+  box-sizing: border-box;
+  padding-top: 70px;
+}
+.mcontent .mheader .inner .mRight .mOne {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  font-size: 14px;
+}
+.mcontent .mheader .inner .mRight .mOne .count {
+  font-size: 14px;
+  color: #e94840;
+  margin-bottom: 5px;
+}
+.mcontent .mheader .inner .mRight span {
+  position: relative;
+  bottom: 10px;
+  color: #929292;
+}
+.mcontent .mheader .inner .mRight .mTwo {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  font-size: 14px;
+}
+.mcontent .mheader .inner .mRight .mTwo .count {
+  font-size: 14px;
+  color: #e94840;
+  margin-bottom: 5px;
+}
+.mcontent .mheader .inner .mRight .mThree {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  font-size: 14px;
+}
+.mcontent .mheader .inner .mRight .mThree .count {
+  font-size: 14px;
+  color: #e94840;
+  margin-bottom: 5px;
+}
+.mcontent .mNav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #323434;
+}
+.mcontent .mNav .list {
+  height: 100%;
+  width: 1200px;
+  margin: 0px auto;
+}
+.mcontent .mNav .list .item {
+  float: left;
+  height: 100%;
+  width: 140px;
+  font-size: 14px;
+  text-align: center;
+}
+.mcontent .mNav .list .item a {
+  color: #ffffff;
+  display: block;
+}
+.mcontent .mMain {
+  width: 1200px;
+  margin: 20px auto 0;
+}
+.mcontent .mMain .mMainLeft {
+  width: 970px;
+  background: #fff;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 50px;
+}
+.mcontent .mMain .mMainLeft .leftTil {
+  font-weight: 900;
+  color: #000000;
+  height: 59px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 59px;
+  position: relative;
+  margin: 0px 29px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mcontent .mMain .mMainLeft .mItem {
+  width: 100%;
+}
+.mcontent .mMain .mMainLeft .mItem .item {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mcontent .mMain .mMainLeft .mItem .item a {
+  display: block;
+}
+.mcontent .mMain .mMainLeft .mItem .item a img {
+  float: left;
+  width: 148px;
+  height: 148px;
+  margin: 25px;
+}
+.mcontent .mMain .mMainLeft .mItem .item a .itemDes {
+  width: 64%;
+  float: left;
+  margin: 25px 0px;
+}
+.mcontent .mMain .mMainLeft .mItem .item a .itemDes .name {
+  font-size: 18px;
+}
+.mcontent .mMain .mMainLeft .mItem .item a .itemDes .des {
+  font-size: 14px;
+  color: #929292;
+  height: 42px;
+  line-height: 42px;
+}
+.mcontent .mMain .mMainLeft .mItem .item a .itemDes .price {
+  margin-top: 10px;
+  color: #e94840;
+  font-size: 14px;
+}
+.mcontent .mMain .mMainLeft .mItem .item a .itemDes .price span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.mcontent .mMain .mMainLeft .mItem .item a .sale {
+  float: left;
+  color: #929292;
+  font-size: 14px;
+  margin-top: 150px;
+}
+.mcontent .mMain .mMainLeft .mItem .more {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: #f8f8f8;
+}
+.mcontent .mMain .mMainLeft .mItem .more span {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 16px;
+  color: #b1b1b1;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  border-image: initial;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.mcontent .mMain .mMainLeft .mDesc .company {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 10px 25px;
+}
+.mcontent .mMain .mMainLeft .mDesc .company img {
+  vertical-align: middle;
+}
+.mcontent .mMain .mMainLeft .mDesc .shopDesc {
+  line-height: 28px;
+  font-size: 16px;
+  margin: 10px 25px 25px;
+}
+.mcontent .mMain .mMainLeft .mline {
+  height: 10px;
+  background: #f8f8f8;
+}
+.mcontent .mMain .mMainLeft .mComment {
+  width: 100%;
+}
+.mcontent .mMain .mMainLeft .mComment .comment {
+  width: 96%;
+  padding-top: 20px;
+  margin: 0px 3%;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mcontent .mMain .mMainLeft .mComment .comment img {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight {
+  float: left;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .name {
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .star {
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .star img {
+  width: 10px;
+  height: 10px;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .mDesc {
+  font-size: 16px;
+  height: 28px;
+  line-height: 28px;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .mPosition {
+  font-size: 14px;
+  color: #898989;
+  margin: 15px 0px;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .mPosition img {
+  width: 10px;
+  height: 10px;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .mBack {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .mBack .B1 {
+  color: #00e0d3;
+}
+.mcontent .mMain .mMainLeft .mComment .comment .mRight .mBack .B2 {
+  color: #898989;
+}
+.mcontent .mMain .mMainLeft .mPage {
+  width: 100%;
+  height: 152px;
+  line-height: 152px;
+  text-align: center;
+}
+.mcontent .mMain .mMainLeft .mPage .One {
+  display: inline-block;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  color: black;
+  font-size: 14px;
+  vertical-align: middle;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  border-image: initial;
+}
+.mcontent .mMain .mMainLeft .mPage .mQH {
+  display: inline-block;
+  width: 479px;
+}
+.mcontent .mMain .mMainLeft .mPage .mQH a {
+  color: #ffffff;
+  background: #e94840;
+}
+.mcontent .mMain .mMainLeft .mPage .Two {
+  display: inline-block;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  color: black;
+  font-size: 14px;
+  vertical-align: middle;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  border-image: initial;
+}
+.mcontent .mMain .mMainRight {
+  width: 230px;
+  box-sizing: border-box;
+  float: right;
+  padding-left: 10px;
+}
+.mcontent .mMain .mMainRight .mBlue {
+  width: 230px;
+  height: 290px;
+  padding-top: 50px;
+  background-image: url(../images/deBg01.jpg);
+  background-repeat: no-repeat;
+}
+.mcontent .mMain .mMainRight .mBlue img {
+  width: 130px;
+  height: 130px;
+  margin-left: 50px;
+}
+.mcontent .mMain .mMainRight .mRed {
+  width: 230px;
+  height: 290px;
+  padding-top: 50px;
+  background-image: url(../images/deBg02.jpg);
+  background-repeat: no-repeat;
+}
+.mcontent .mMain .mMainRight .mRed img {
+  width: 130px;
+  height: 130px;
+  margin-left: 50px;
+}

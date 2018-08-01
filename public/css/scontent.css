@@ -1,0 +1,90 @@
+.scontent {
+  width: 100%;
+  background: #FBF8F8;
+}
+.scontent .conTitle {
+  width: 1200px;
+  margin: 0 auto;
+  height: 85px;
+  line-height: 85px;
+}
+.scontent .conTitle span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 85px;
+}
+.scontent .conMain {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.scontent .conMain .conMainLeft {
+  width: 970px;
+  float: left;
+}
+.scontent .conMain .conMainLeft .conMainList .conMainItem {
+  width: 232px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  float: left;
+}
+.scontent .conMain .conMainLeft .conMainList .conMainItem img {
+  width: 210px;
+  height: 210px;
+}
+.scontent .conMain .conMainLeft .conMainList .conMainItem .title {
+  height: 26px;
+  margin-top: 15px;
+  line-height: 26px;
+}
+.scontent .conMain .conMainLeft .conMainList .conMainItem .title .text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.scontent .conMain .conMainLeft .conMainList .conMainItem .order {
+  font-size: 12px;
+  color: #929292;
+  height: 26px;
+  line-height: 26px;
+}
+.scontent .conMain .conMainLeft .conMainList .conMainItem .order .rating {
+  float: right;
+}
+.scontent .conMain .conMainLeft .conFooter {
+  width: 100%;
+  margin: 0 auto;
+  height: 152px;
+  text-align: center;
+}
+.scontent .conMain .conMainLeft .conFooter .conFooterTil {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 50px 5px;
+  background: #fff;
+  font-size: 16px;
+  color: #b1b1b1;
+  cursor: pointer;
+}
+.scontent .conMain .conMainRight {
+  float: right;
+  width: 230px;
+}
+.scontent .conMain .conMainRight .cjoin {
+  margin-top: 10px;
+  height: 290px;
+  background-image: url(../images/erweima.jpg);
+  background-repeat: no-repeat;
+}
+.scontent .conMain .conMainRight .cjoin img {
+  width: 130px;
+  margin: 50px 0 0 50px;
+}

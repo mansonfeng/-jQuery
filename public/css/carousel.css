@@ -1,0 +1,112 @@
+.carousel {
+  position: relative;
+  height: 420px;
+  width: 100%;
+}
+.carousel .banner {
+  position: relative;
+}
+.carousel .banner .slide .list {
+  height: 420px;
+  width: 100%;
+}
+.carousel .banner .slide .list > .active {
+  opacity: 1;
+}
+.carousel .banner .slide .list .item {
+  position: absolute;
+  width: 100%;
+  height: 420px;
+  background-image: url('../images/banner1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  left: -300px;
+}
+.carousel .banner .slide .list .item :nth-child(2) {
+  background-image: url('../images/banner2.jpg');
+}
+.carousel .banner .slide .list .item :nth-child(3) {
+  background-image: url('../images/banner3.jpg');
+}
+.carousel .banner .slide .list .item.active {
+  opacity: 1;
+}
+.carousel .banner .point {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  text-align: center;
+}
+.carousel .banner .point .pointList {
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+}
+.carousel .banner .point .pointList .pointItem {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+.carousel .banner .point .pointList .pointItem.active {
+  background: white;
+}
+.carousel .banner .point .pointList .pointItem :nth-child(2) {
+  margin: 0 5px;
+}
+.carousel .sideNav {
+  width: 180px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  background: #757881;
+}
+.carousel .sideNav .navList .navItem {
+  height: 42px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  line-height: 42px;
+}
+.carousel .sideNav .navList .navItem:hover {
+  background: rgba(255, 0, 0, 0.5);
+}
+.carousel .sideNav .navList .navItem:hover > .detailUl {
+  display: block;
+}
+.carousel .sideNav .navList .navItem .navItemA {
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+}
+.carousel .sideNav .navList .navItem .navItemA span {
+  display: inline-block;
+  color: white;
+  margin-left: 20px;
+}
+.carousel .sideNav .navList .navItem .detailUl {
+  width: 180px;
+  height: 420px;
+  display: none;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+.carousel .sideNav .navList .navItem .detailUl .dataiLi {
+  height: 42px;
+  box-sizing: border-box;
+  line-height: 42px;
+  text-align: center;
+}
+.carousel .sideNav .navList .navItem .detailUl .dataiLi a {
+  display: block;
+  color: black;
+  font-weight: 700;
+}

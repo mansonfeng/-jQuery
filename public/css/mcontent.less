@@ -249,15 +249,16 @@
               font-size: 14px;
               height: 28px;
               line-height: 28px;
+
               img{
+                display: inline-block;
                 width: 10px;
                 height: 10px;
               }
             }
             .mDesc{
               font-size: 16px;
-              height: 28px;
-              line-height: 28px;
+              white-space: nowrap;
             }
             .mPosition{
               font-size: 14px;
@@ -266,17 +267,6 @@
               img{
                 width: 10px;
                 height: 10px;
-              }
-            }
-            .mBack{
-              padding-top: 10px;
-              margin-bottom: 10px;
-              border-top: 1px solid rgb(229, 229, 229);
-              .B1{
-                color: rgb(0, 224, 211);
-              }
-              .B2{
-                color: rgb(137, 137, 137);
               }
             }
           }
@@ -307,7 +297,15 @@
             color: rgb(255, 255, 255);
             background: rgb(233, 72, 64);
             .number{
-
+              display: inline-block;
+              width: 30px;
+              height: 28px;
+              line-height: 28px;
+              text-align: center;
+              border: 1px solid #e5e5e5;
+              color: #000;
+              margin: 0 5px;
+              transition: color .3s;
             }
           }
         }

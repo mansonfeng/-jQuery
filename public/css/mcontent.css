@@ -246,13 +246,13 @@
   line-height: 28px;
 }
 .mcontent .mMain .mMainLeft .mComment .comment .mRight .star img {
+  display: inline-block;
   width: 10px;
   height: 10px;
 }
 .mcontent .mMain .mMainLeft .mComment .comment .mRight .mDesc {
   font-size: 16px;
-  height: 28px;
-  line-height: 28px;
+  white-space: nowrap;
 }
 .mcontent .mMain .mMainLeft .mComment .comment .mRight .mPosition {
   font-size: 14px;
@@ -262,17 +262,6 @@
 .mcontent .mMain .mMainLeft .mComment .comment .mRight .mPosition img {
   width: 10px;
   height: 10px;
-}
-.mcontent .mMain .mMainLeft .mComment .comment .mRight .mBack {
-  padding-top: 10px;
-  margin-bottom: 10px;
-  border-top: 1px solid #e5e5e5;
-}
-.mcontent .mMain .mMainLeft .mComment .comment .mRight .mBack .B1 {
-  color: #00e0d3;
-}
-.mcontent .mMain .mMainLeft .mComment .comment .mRight .mBack .B2 {
-  color: #898989;
 }
 .mcontent .mMain .mMainLeft .mPage {
   width: 100%;
@@ -300,6 +289,17 @@
 .mcontent .mMain .mMainLeft .mPage .mQH a {
   color: #ffffff;
   background: #e94840;
+}
+.mcontent .mMain .mMainLeft .mPage .mQH a .number {
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  color: #000;
+  margin: 0 5px;
+  transition: color .3s;
 }
 .mcontent .mMain .mMainLeft .mPage .Two {
   display: inline-block;

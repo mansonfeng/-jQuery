@@ -188,7 +188,7 @@
 
 <script  id="contentTem"  type="text/html">
     {{each data}}
-    <li class="conMainItem" id={{$value.id}}>
+    <li class="conMainItem" id={{$value.id}} onclick="serviceIn(id)">
         <img src={{$value.imgUrl}} alt="xxx">
         <p class="title">
             <i class="iconfont icon-home"></i>
@@ -209,6 +209,10 @@
             var $conMainList = $('.conMainList')
             $conMainList.html(conTem)
         })
-    })
+    });
+    function serviceIn(id){
+        window.location.href='http://localhost:4000/serviceIn.html?id='+id
+    }
 </script>
+
 </html>

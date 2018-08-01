@@ -65,33 +65,7 @@
     <div class="mcontent">
         <div class="mheader">
             <div class="inner">
-                <div class="mLeft">
-                    <span class="mTitle">云家政</span>
-                    <span class="time">
-                        营业时间 :
-                        <span>09:00-18:00</span>
-                    </span>
-                    <span class="latest">
-                        最近可预约时间：
-                        <span>04月21日 15:30</span>
-                    </span>
-                </div>
-                <div class="mRight">
-                    <div class="mOne">
-                        <div class="count">45341</div>
-                        <div class="name">成功接单</div>
-                    </div>
-                    <span>|</span>
-                    <div class="mTwo">
-                        <div class="count">92%</div>
-                        <div class="name">接单率</div>
-                    </div>
-                    <span>|</span>
-                    <div class="mThree">
-                        <div class="count">86%</div>
-                        <div class="name">好评率</div>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="mNav">
@@ -106,7 +80,7 @@
                 <div class="leftTil">服务项目</div>
                 <div class="mItem">
                     <div class="item">
-                        <a href="javascript" class="clearFix">
+                        <a href="javascript:;" class="clearFix">
                             <img src="./images/d01.jpg" alt="xx">
                             <div class="itemDes">
                                 <div class="name">特价柔体拉筋术</div>
@@ -139,41 +113,13 @@
                 <div class="mline"></div>
                 <div class="leftTil">用户评论</div>
                 <div class="mComment">
-                    <div class="comment clearFix">
-                        <img src="http://img.daoway.cn/img/2017/12/30/adf81789-db5b-47d6-a0fb-efbdadc95b54.jpg" alt="xxx">
-                        <div class="mRight">
-                            <div class="name">啦啦6666</div>
-                            <div class="star">
-                                <img src="./images/star.png" alt="xx">
-                                <img src="./images/star.png" alt="xx">
-                                <img src="./images/star.png" alt="xx">
-                                <img src="./images/star.png" alt="xx">
-                                1521196598000
-                            </div>
-                            <div class="mDesc">阿姨服务非常好，收拾的很干净。</div>
-                            <div class="mPosition">
-                                <img src="./images/citypoint.png" alt="xxx">
-                                上海 普陀区
-                            </div>
-                            <div class="mBack">
-                                <span class="B1">商家回复： </span>
-                                <span class="B2">感谢亲对老师的认可，欢迎下次继续预约，推荐关注店铺，你点到家为您提供绿色健康专业服务，有健康才有将来</span>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="mPage">
                     <a href="javascript:;" class="One">上一页</a>
                     <div class="mQH">
-                        <a href="javascript:;" class="number">1</a>
-                        <a href="javascript:;" class="number">2</a>
-                        <a href="javascript:;" class="number">3</a>
-                        <a href="javascript:;" class="number">4</a>
-                        <a href="javascript:;" class="number">5</a>
-                        <a href="javascript:;" class="number">6</a>
-                        <a href="javascript:;" class="number">7</a>
-                        <a href="javascript:;" class="number">8</a>
-                        <a href="javascript:;" class="number">9</a>
+
+
 
                     </div>
                     <a href="javascript:;" class="Two">下一页</a>
@@ -199,7 +145,6 @@
         </h2>
         <span class="supplyDes" >到位平台担保交易安全，交易未成功100%退款</span>
     </div>
-
     <div class="service">
         <ul class="serList">
             <li class="serItem">
@@ -216,7 +161,6 @@
             </li>
         </ul>
     </div>
-
     <div class="footer ">
         <dl class="clearFix">
             <dt>热门城市</dt>
@@ -257,7 +201,6 @@
             </dd>
         </dl>
     </div>
-
     <div class="Partner">
         <p class="htit">合作伙伴</p>
         <ul class="hezuo clearFix">
@@ -281,11 +224,158 @@
             <li class="joinItem"></li>
         </ul>
     </div>
-
     <div class="baian">
         <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p>
     </div>
 </body>
 <script type="text/javascript" src="./js/jquery-1.10.1.js"></script>
 <script type="text/javascript" src="./js/header.js"></script>
+<script type="text/javascript" src="./js/template.js"></script>
+
+<script id="conHeader" type="text/html">
+    {{each data}}
+    <div class="mLeft">
+        <span class="mTitle">{{$value.name}}</span>
+        <span class="time">
+            营业时间 :
+            <span>{{$value.seredate}}</span>
+        </span>
+        <span class="latest">
+            最近可预约时间：
+            <span>{{$value.servedatalately}}</span>
+        </span>
+    </div>
+    <div class="mRight">
+        <div class="mOne">
+            <div class="count">{{$value.orderCount}}</div>
+            <div class="name">成功接单</div>
+        </div>
+        <span>|</span>
+        <div class="mTwo">
+            <div class="count">{{$value.accept}}</div>
+            <div class="name">接单率</div>
+        </div>
+        <span>|</span>
+        <div class="mThree">
+            <div class="count">{{$value.praise}}</div>
+            <div class="name">好评率</div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script id="comments" type="text/html">
+    {{each data}}
+    <div class="comment clearFix">
+        <img src={{$value.iconUrl}} alt="xxx">
+        <div class="mRight">
+            <div class="name">{{$value.nick}}</div>
+            <div class="star">
+                {{if 5-$value.star ===0}}
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                {{else if 5-$value.star ===1}}
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                {{else if 5-$value.star ===2}}
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                {{else if 5-$value.star ===3}}
+                <img src="./images/star.png" alt="xx">
+                <img src="./images/star.png" alt="xx">
+                {{else if 5-$value.star ===4}}
+                <img src="./images/star.png" alt="xx">
+                {{/if}}
+                {{$value.createtime}}
+            </div>
+            <div class="mDesc ellipsis">
+                {{$value.comment}}
+            </div>
+            <div class="mPosition">
+                <img src="./images/citypoint.png" alt="xxx">
+                {{$value.city}} {{$value.area}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script id="pages" type="text/html">
+    {{each data}}
+    <a href="javascript:;" class="number" id={{$index}} onclick="page(id)"> {{$value}} </a>
+    {{/each}}
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $.get('http://localhost:4000/item',function(data){
+            console.log(data);
+            var $conHeader = template('conHeader',{data:data});
+            var $inner = $('.mcontent .mheader .inner');
+            $inner.html($conHeader)
+        })
+        $.get('http://localhost:4000/comment',function(data){
+            console.log(data);
+            var $comments = template('comments',{data:data});
+            var $mComment = $('.mcontent .mMain .mMainLeft .mComment');
+            $mComment.html($comments)
+            $pages = $('.mcontent .mMain .mMainLeft .mPage .mQH a .number')
+        })
+        $.get('http://localhost:4000/comment',function(data){
+
+            for(var i=0 ; i<data.length;i++){
+                function GMTToStr(time){
+                    var  date = new Date(time)
+                    var  Str=date.getFullYear() + '-' +
+                         (date.getMonth() + 1) + '-' +
+                         date.getDate() + ' ' +
+                         date.getHours() + ':' +
+                         date.getMinutes() + ':' +
+                         date.getSeconds()
+                    return Str
+                }
+                console.log(GMTToStr(data[i].createtime))
+                data[i].createtime = GMTToStr(data[i].createtime)
+            }
+
+            var $pages = template('pages',{data:data})
+            var $pageWrap = $('.mcontent .mMain .mMainLeft .mPage .mQH ')
+            $pageWrap.html($pages)
+            pageFunction()
+        })
+        var num = 0
+        var $page = $('.mcontent .mMain .mMainLeft .mPage .mQH a .number')
+        var $One = $('.mcontent .mMain .mMainLeft .mPage .One')
+        var $Two = $('.mcontent .mMain .mMainLeft .mPage .Two')
+        function pages(id){
+            num = id;
+            $.get('gttp://localhost:4000/comment?page=' +id,function(data){
+                var $comments = template('comments',{data:data});
+                var $mComment = $('.mcontent .mMain .mMainLeft .mComment');
+                $mComment.html($comments)
+            })
+            pageFunction(id)
+        }
+
+
+        //分页变化样式函数
+        function pageFunction(num){
+            var $pages = $('.mcontent .mMain .mMainLeft .mPage .mQH a .number')
+            $One.removeClass('active')
+            $Two.removeClass('active')
+            if(num==0){
+                $Two.addClass('active')
+            }else if(num==8){
+                $One.addClass('active')
+            }
+        }
+
+    })
+</script>
 </html>
